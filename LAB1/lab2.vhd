@@ -16,7 +16,8 @@ end g16_lab2;
 --architecture description of MAC
 architecture logic of g16_lab2 is
 	signal mac_temp : signed(23 downto 0);		--var holds temp resultant of mac ops
-	signal count: integer range 0 to 1000 := 0;	--counter which on r-edge is incremented and verify with N, if less continue mac operation, else exit
+	signal count: integer range 0 to 1000 := 0;	
+--counter which on r-edge is incremented and verify with N, if less continue mac operation, else exit
 
 	begin
 	mac_math : process(clk, rst, x, y)
